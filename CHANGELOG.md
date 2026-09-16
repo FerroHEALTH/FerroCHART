@@ -335,6 +335,12 @@ above the old one; three of those and one release has three
   The screen looked right, which is why it went unnoticed until the battery
   started photographing it.
 
+### Security
+
+- `rustls` moves to 0.23.45 for RUSTSEC-2026-0285, TLS 1.3 handshake
+  messages incorrectly accepted across encryption level boundaries (#221).
+  The lockfile moves; no source changes.
+
 ## [0.1.0] - 2026-09-08
 
 ### Added

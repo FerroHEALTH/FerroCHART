@@ -32,8 +32,9 @@ Apache 2.0 appears as a licence of this project's own code.
 
 ## Contributions
 
-Inbound equals outbound under the same licence. There is no contributor licence
-agreement and no copyright assignment.
+A contribution is licensed under the same licence. You keep your copyright, and you
+grant the Licensor the relicensing right in CONTRIBUTING.md § Licensing of
+contributions, recorded by a checkbox in the pull request.
 
 ## Vendored material
 

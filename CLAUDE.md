@@ -1,4 +1,4 @@
-<!-- SPDX-FileCopyrightText: Ruben Talstra -->
+<!-- SPDX-FileCopyrightText: Vernum Projecten B.V. -->
 <!-- SPDX-License-Identifier: BUSL-1.1 -->
 
 # CLAUDE.md
@@ -242,7 +242,7 @@ every non-production use and for non-commercial production use, a commercial
 licence from the Licensor for any other production use (always for a hosted,
 managed, or embedded service and for for-fee distribution), and Apache License
 2.0 four years after each version. Every first-party file carries
-`SPDX-FileCopyrightText: Ruben Talstra` and `SPDX-License-Identifier: BUSL-1.1`
+`SPDX-FileCopyrightText: Vernum Projecten B.V.` and `SPDX-License-Identifier: BUSL-1.1`
 in its header. Contribution is inbound equals outbound under the same licence,
 and there is no contributor licence agreement and no copyright assignment.
 Vendored specifications and third-party material keep their upstream terms,

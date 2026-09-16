@@ -6,7 +6,7 @@ metadata:
   type: project
 ---
 
-<!-- SPDX-FileCopyrightText: Ruben Talstra -->
+<!-- SPDX-FileCopyrightText: Vernum Projecten B.V. -->
 <!-- SPDX-License-Identifier: BUSL-1.1 -->
 
 FerroCHART compiles an openEHR operational template into a form definition,

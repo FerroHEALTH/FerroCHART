@@ -5,7 +5,7 @@ metadata:
   type: feedback
 ---
 
-<!-- SPDX-FileCopyrightText: Ruben Talstra -->
+<!-- SPDX-FileCopyrightText: Vernum Projecten B.V. -->
 <!-- SPDX-License-Identifier: BUSL-1.1 -->
 
 Across the Ferro family, the owner decides foundational architecture from

@@ -6,7 +6,7 @@ metadata:
   type: feedback
 ---
 
-<!-- SPDX-FileCopyrightText: Ruben Talstra -->
+<!-- SPDX-FileCopyrightText: Vernum Projecten B.V. -->
 <!-- SPDX-License-Identifier: BUSL-1.1 -->
 
 Run every concurrent implementation agent in its own `git worktree`, and tell

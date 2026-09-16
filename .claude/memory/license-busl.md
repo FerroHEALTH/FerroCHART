@@ -6,7 +6,7 @@ metadata:
   type: project
 ---
 
-<!-- SPDX-FileCopyrightText: Ruben Talstra -->
+<!-- SPDX-FileCopyrightText: Vernum Projecten B.V. -->
 <!-- SPDX-License-Identifier: BUSL-1.1 -->
 
 FerroCHART's own code and text are under the **Business Source License 1.1**,
@@ -30,7 +30,7 @@ captures health data through the Licensed Work.
 
 **How to apply:**
 
-- Every first-party file carries `SPDX-FileCopyrightText: Ruben Talstra` and
+- Every first-party file carries `SPDX-FileCopyrightText: Vernum Projecten B.V.` and
   `SPDX-License-Identifier: BUSL-1.1` in its header. The pin-matrix guard
   (`scripts/checks/versions.sh`) fails on a stale licence claim anywhere in the
   tree.

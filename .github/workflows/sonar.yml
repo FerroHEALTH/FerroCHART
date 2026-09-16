@@ -59,7 +59,7 @@ jobs:
 
       - name: Install cargo-llvm-cov and cargo-nextest
         if: ${{ hashFiles('Cargo.toml') != '' }}
-        uses: taiki-e/install-action@0758d235715de2f3551eacc980d9ae8fce9342c3 # v2.87.3
+        uses: taiki-e/install-action@c3ec0de9ae7f1019cea21aa96aa0a895b9552063 # v2.87.9
         with:
           tool: cargo-llvm-cov,cargo-nextest
 

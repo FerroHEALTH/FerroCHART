@@ -88,7 +88,12 @@ the build order.
 - `scripts/checks/changelog.sh`, which refuses a release section with two
   headings of one change type (#184). Every pull request adds an entry under
   `[Unreleased]`, and the quick way to do that is to paste a fresh
-  `### Changed` above the old one; three of those and one release has three
+  `### Changed` - The Licensor and copyright holder of the project's own work is Vernum
+  Projecten B.V. (#214). Every `Licensor:`, copyright and
+  `SPDX-FileCopyrightText` line names the company. The licence terms are
+  unchanged, and maintainer credit stays a person.
+
+above the old one; three of those and one release has three
   Changed sections and a reader can no longer find anything. It also checks
   the headings are the six Keep a Changelog names, in the order that
   specification lists them, and that none is empty. Every section in the file

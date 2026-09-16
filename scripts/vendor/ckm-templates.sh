@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# SPDX-FileCopyrightText: Ruben Talstra
+# SPDX-FileCopyrightText: Vernum Projecten B.V.
 # SPDX-License-Identifier: BUSL-1.1
 # Vendor the openEHR CKM template library as OPT 1.4 XML.
 #
@@ -194,7 +194,7 @@ withheld = [(cid, p) for cid, _, p in placed if p and "unstated" in p]
 missing = [(cid, dest) for cid, dest, p in placed if p is None]
 
 lines = [
-    "<!-- SPDX-FileCopyrightText: Ruben Talstra -->",
+    "<!-- SPDX-FileCopyrightText: Vernum Projecten B.V. -->",
     "<!-- SPDX-License-Identifier: BUSL-1.1 -->",
     "",
     "# The openEHR CKM template pack: provenance",

@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# SPDX-FileCopyrightText: Ruben Talstra
+# SPDX-FileCopyrightText: Vernum Projecten B.V.
 # SPDX-License-Identifier: BUSL-1.1
 # Fetch the ADL 2 archetype library, with its ADL 1.4 twins.
 #
@@ -101,7 +101,7 @@ stated = [(p, licence_of(p)) for p in adls + adl]
 with_licence = [(p, v) for p, v in stated if v]
 
 lines = [
-    "<!-- SPDX-FileCopyrightText: Ruben Talstra -->",
+    "<!-- SPDX-FileCopyrightText: Vernum Projecten B.V. -->",
     "<!-- SPDX-License-Identifier: BUSL-1.1 -->",
     "",
     "# The ADL 2 archetype pack: provenance",

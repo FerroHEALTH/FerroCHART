@@ -1,4 +1,4 @@
-// SPDX-FileCopyrightText: Ruben Talstra
+// SPDX-FileCopyrightText: Vernum Projecten B.V.
 // SPDX-License-Identifier: BUSL-1.1
 //! The documentation capture pass: one PNG per screen per ground, for the
 //! book page at `website/book/src/operate/renderer.md`.

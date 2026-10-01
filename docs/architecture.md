@@ -4,7 +4,7 @@
 # Architecture
 
 The design of record. It answers the research program on
-[issue #1](https://github.com/rubentalstra/FerroCHART/issues/1), and every
+[issue #1](https://github.com/FerroHEALTH/FerroCHART/issues/1), and every
 decision below carries a citation to a primary source or the explicit label
 "no specification governs this: our own design".
 

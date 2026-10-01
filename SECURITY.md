@@ -28,7 +28,7 @@ Once the project reaches 1.0 this table will name a supported minor line.
 privately through GitHub's private vulnerability reporting:
 
 1. Open the private advisory form:
-   <https://github.com/rubentalstra/FerroCHART/security/advisories/new>. You
+   <https://github.com/FerroHEALTH/FerroCHART/security/advisories/new>. You
    can also reach it from the repository's **Security** tab under **Report a
    vulnerability**.
 2. Describe the issue, the affected version or commit, and a reproduction if
@@ -90,13 +90,19 @@ alone:
 
 ```sh
 gh attestation verify ferrochart-<tag>-<target>.tar.gz \
-  -R rubentalstra/FerroCHART \
-  --signer-workflow rubentalstra/FerroCHART/.github/workflows/release-build.yml
+  -R FerroHEALTH/FerroCHART \
+  --signer-workflow FerroHEALTH/FerroCHART/.github/workflows/release-build.yml
 
-gh attestation verify oci://ghcr.io/rubentalstra/ferrochart:<version> \
-  -R rubentalstra/FerroCHART \
-  --signer-workflow rubentalstra/FerroCHART/.github/workflows/release-image.yml
+gh attestation verify oci://ghcr.io/ferrohealth/ferrochart:<version> \
+  -R FerroHEALTH/FerroCHART \
+  --signer-workflow FerroHEALTH/FerroCHART/.github/workflows/release-image.yml
 ```
+
+Releases up to v0.1.0 were built before the repository moved to the
+FerroHEALTH organization: they are signed as `rubentalstra/FerroCHART`
+and their image is `ghcr.io/rubentalstra/ferrochart`, so verify those
+with the old names in every command above. The same manifests are also
+at `ghcr.io/ferrohealth/ferrochart`, copied by digest.
 
 The lane that emits these landed after `v0.0.1`, so the first release carrying
 them is the next one; `v0.0.1` published archives and checksums only. The full

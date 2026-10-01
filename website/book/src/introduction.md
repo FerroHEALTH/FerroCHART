@@ -54,5 +54,5 @@ thin enough that people running openEHR in a hospital build their own, one
 form at a time, or go without. That gap is the reason for this project, and it
 was named by the openEHR community rather than invented here.
 
-[arch]: https://github.com/rubentalstra/FerroCHART/blob/main/docs/architecture.md
-[live]: https://github.com/rubentalstra/FerroCHART/issues/126
+[arch]: https://github.com/FerroHEALTH/FerroCHART/blob/main/docs/architecture.md
+[live]: https://github.com/FerroHEALTH/FerroCHART/issues/126

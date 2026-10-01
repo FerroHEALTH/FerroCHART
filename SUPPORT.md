@@ -16,11 +16,11 @@ came to do: evaluate, operate, integrate, or contribute. The architecture is
 the first page under Evaluate.
 [`CLAUDE.md`](CLAUDE.md) carries the working discipline, and the research
 program on
-[issue #1](https://github.com/rubentalstra/FerroCHART/issues/1) is where the
+[issue #1](https://github.com/FerroHEALTH/FerroCHART/issues/1) is where the
 design decisions appear with their citations.
 
 If those do not answer it, **open a GitHub issue** through the
-[issue chooser](https://github.com/rubentalstra/FerroCHART/issues/new/choose):
+[issue chooser](https://github.com/FerroHEALTH/FerroCHART/issues/new/choose):
 whether an approach fits, what a mapping construct means in this
 implementation, or why a design is the way it is.
 
@@ -30,7 +30,7 @@ paid tier. Answers come when the maintainer is at a keyboard
 
 ## I found a defect
 
-**[Open an issue](https://github.com/rubentalstra/FerroCHART/issues/new/choose)**
+**[Open an issue](https://github.com/FerroHEALTH/FerroCHART/issues/new/choose)**
 when something is wrong, missing, or contradicts one of the specifications this
 project answers to: the openEHR Reference Model, the Archetype Object Model and
 ADL, ITS-REST, or AQL.
@@ -57,7 +57,7 @@ itself a defect; a citation is.
 
 **Do not open a public issue.** Follow [SECURITY.md](SECURITY.md): report
 privately through
-[GitHub private vulnerability reporting](https://github.com/rubentalstra/FerroCHART/security/advisories/new).
+[GitHub private vulnerability reporting](https://github.com/FerroHEALTH/FerroCHART/security/advisories/new).
 
 That document also carries what you can expect in return: an acknowledgement
 window, an assessment window, and coordinated disclosure with credit by

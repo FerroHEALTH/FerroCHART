@@ -87,4 +87,4 @@ header, and carries no path to the node that failed. So FerroCHART validates
 the composition against its operational template before it posts. A CDR
 rejecting a composition FerroCHART built and validated is a FerroCHART defect.
 
-[arch]: https://github.com/rubentalstra/FerroCHART/blob/main/docs/architecture.md
+[arch]: https://github.com/FerroHEALTH/FerroCHART/blob/main/docs/architecture.md

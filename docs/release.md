@@ -107,19 +107,19 @@ any workflow in the repository:
 
 ```sh
 gh attestation verify ferrochart-<tag>-<target>.tar.gz \
-  -R rubentalstra/FerroCHART \
-  --signer-workflow rubentalstra/FerroCHART/.github/workflows/release-build.yml
+  -R FerroHEALTH/FerroCHART \
+  --signer-workflow FerroHEALTH/FerroCHART/.github/workflows/release-build.yml
 ```
 
 The image, where the tag resolves to the index, and the SPDX SBOM of one
 platform manifest:
 
 ```sh
-gh attestation verify oci://ghcr.io/rubentalstra/ferrochart:<version> \
-  -R rubentalstra/FerroCHART \
-  --signer-workflow rubentalstra/FerroCHART/.github/workflows/release-image.yml
-gh attestation verify oci://ghcr.io/rubentalstra/ferrochart@<manifest digest> \
-  -R rubentalstra/FerroCHART --predicate-type https://spdx.dev/Document/v2.3
+gh attestation verify oci://ghcr.io/ferrohealth/ferrochart:<version> \
+  -R FerroHEALTH/FerroCHART \
+  --signer-workflow FerroHEALTH/FerroCHART/.github/workflows/release-image.yml
+gh attestation verify oci://ghcr.io/ferrohealth/ferrochart@<manifest digest> \
+  -R FerroHEALTH/FerroCHART --predicate-type https://spdx.dev/Document/v2.3
 ```
 
 The quickstart compose file, which is signed by the image lane because it names
@@ -127,9 +127,15 @@ the image that lane pushed:
 
 ```sh
 gh attestation verify compose.yaml \
-  -R rubentalstra/FerroCHART \
-  --signer-workflow rubentalstra/FerroCHART/.github/workflows/release-image.yml
+  -R FerroHEALTH/FerroCHART \
+  --signer-workflow FerroHEALTH/FerroCHART/.github/workflows/release-image.yml
 ```
+
+Releases up to v0.1.0 were built before the repository moved to the
+FerroHEALTH organization: they are signed as `rubentalstra/FerroCHART`
+and their image is `ghcr.io/rubentalstra/ferrochart`, so verify those
+with the old names in every command above. The same manifests are also
+at `ghcr.io/ferrohealth/ferrochart`, copied by digest.
 
 Without a network path to Sigstore, `sha256sum -c` against the `.sha256sum`
 beside a file is the offline floor, and the `.sigstore.json` bundles are
@@ -184,7 +190,7 @@ owner-actions table of `docs/ci-cd.md`.
 
 ## The container image
 
-`ghcr.io/rubentalstra/ferrochart`, an index over `linux/amd64` and
+`ghcr.io/ferrohealth/ferrochart`, an index over `linux/amd64` and
 `linux/arm64`, tagged `<version>`, `<major>.<minor>`, and `latest` (which the
 metadata action skips for a pre-release). GHCR tags are mutable, so a
 deployment pins the digest the lane prints.
@@ -202,7 +208,7 @@ as numeric uid 65532, has no shell and no package manager, and carries no
 A downloader needs no clone:
 
 ```sh
-curl -LO https://github.com/rubentalstra/FerroCHART/releases/latest/download/compose.yaml
+curl -LO https://github.com/FerroHEALTH/FerroCHART/releases/latest/download/compose.yaml
 ```
 
 Its profile-less path runs FerroCHART alone against a CDR and a terminology
@@ -265,7 +271,7 @@ path for real, including the attestations and the registry push.
 2. **Read the published release.** Its notes are the changelog section, and its
    asset list is what `finalize-release` demanded.
 3. **Close the milestone.** `gh api -X PATCH
-   repos/rubentalstra/FerroCHART/milestones/<n> -f state=closed`. A milestone
+   repos/FerroHEALTH/FerroCHART/milestones/<n> -f state=closed`. A milestone
    is a delivery promise, and one left open after its release is cut says the
    promise is still outstanding. Nothing closes it automatically, and both
    cuts so far needed it done by hand.

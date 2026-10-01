@@ -116,6 +116,16 @@ above the old one; three of those and one release has three
 
 ### Changed
 
+- **The repository moved to the FerroHEALTH organization**
+  (<https://github.com/FerroHEALTH/FerroCHART>, #224); the old
+  `rubentalstra/FerroCHART` URLs redirect. The image now publishes to
+  `ghcr.io/ferrohealth/ferrochart`, and the quickstart `compose.yaml` pulls it
+  from there. Every tagged manifest up to v0.1.0 is copied there by digest and
+  stays available under `ghcr.io/rubentalstra/ferrochart`, and its signatures
+  name `rubentalstra/FerroCHART` as the repository that built it. The release
+  lanes spell the image owner as a literal, because `github.repository_owner`
+  is now `FerroHEALTH` and an OCI reference must be lowercase.
+
 - The published site says what is built (#196). Every page in `SUMMARY.md`
   was read against the code: the landing page no longer says the product
   renders nothing, the operations card no longer says the routes that do the
@@ -1170,10 +1180,10 @@ above the old one; three of those and one release has three
   The configuration is FerroBRIDGE's, adapted from the FHIR and OMOP oracles to
   the openEHR Reference Model, the Archetype Object Model, ITS-REST, and AQL.
 
-[Unreleased]: https://github.com/rubentalstra/FerroCHART/compare/v0.1.0...HEAD
-[0.1.0]: https://github.com/rubentalstra/FerroCHART/compare/v0.0.5...v0.1.0
-[0.0.5]: https://github.com/rubentalstra/FerroCHART/compare/v0.0.4...v0.0.5
-[0.0.4]: https://github.com/rubentalstra/FerroCHART/compare/v0.0.3...v0.0.4
-[0.0.3]: https://github.com/rubentalstra/FerroCHART/compare/v0.0.2...v0.0.3
-[0.0.2]: https://github.com/rubentalstra/FerroCHART/compare/v0.0.1...v0.0.2
-[0.0.1]: https://github.com/rubentalstra/FerroCHART/releases/tag/v0.0.1
+[Unreleased]: https://github.com/FerroHEALTH/FerroCHART/compare/v0.1.0...HEAD
+[0.1.0]: https://github.com/FerroHEALTH/FerroCHART/compare/v0.0.5...v0.1.0
+[0.0.5]: https://github.com/FerroHEALTH/FerroCHART/compare/v0.0.4...v0.0.5
+[0.0.4]: https://github.com/FerroHEALTH/FerroCHART/compare/v0.0.3...v0.0.4
+[0.0.3]: https://github.com/FerroHEALTH/FerroCHART/compare/v0.0.2...v0.0.3
+[0.0.2]: https://github.com/FerroHEALTH/FerroCHART/compare/v0.0.1...v0.0.2
+[0.0.1]: https://github.com/FerroHEALTH/FerroCHART/releases/tag/v0.0.1

@@ -6,7 +6,7 @@
 The tracker is GitHub Issues (`issue-workflow.md`); milestones are
 the release spine; labels carry type + priority; native edges carry
 decomposition/sequencing (`issue-relationships.md`). The **"FerroCHART Roadmap"
-Project** (a GitHub Project v2 under the `rubentalstra` account) exists for one
+Project** (a GitHub Project v2 under the `FerroHEALTH` organization) exists for one
 reason: **outward transparency:** anyone can see what is planned, in progress,
 and shipped, without reading the raw issue list. It is a **VIEW over the
 tracker, never a second tracker.** This file is the policy (what the board may
@@ -17,7 +17,7 @@ and may not carry) and the canonical commands (the one sanctioned write path is
 
 **The board does not exist until the owner creates it.** The repository owner
 must create a GitHub Project (v2) titled **"FerroCHART Roadmap"** under the
-`rubentalstra` account, with the built-in single-select `Status` field carrying
+`FerroHEALTH` organization, with the built-in single-select `Status` field carrying
 exactly `Todo` / `In Progress` / `Done`, plus a Date field named `Target date`
 for the roadmap layout, and grant the working clone the `project` token scope
 (`gh auth refresh -s project`). Until then, every `scripts/gh/project.sh`

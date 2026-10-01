@@ -27,12 +27,12 @@
 # downloader runs and it names the image this lane pushed.
 #
 # Verify a published image, where the tag resolves to the index:
-#   gh attestation verify oci://ghcr.io/rubentalstra/ferrochart:<version> \
-#     -R rubentalstra/FerroCHART \
-#     --signer-workflow rubentalstra/FerroCHART/.github/workflows/release-image.yml
+#   gh attestation verify oci://ghcr.io/ferrohealth/ferrochart:<version> \
+#     -R FerroHEALTH/FerroCHART \
+#     --signer-workflow FerroHEALTH/FerroCHART/.github/workflows/release-image.yml
 # and the SBOM of one platform manifest:
-#   gh attestation verify oci://ghcr.io/rubentalstra/ferrochart@<manifest digest> \
-#     -R rubentalstra/FerroCHART --predicate-type https://spdx.dev/Document/v2.3
+#   gh attestation verify oci://ghcr.io/ferrohealth/ferrochart@<manifest digest> \
+#     -R FerroHEALTH/FerroCHART --predicate-type https://spdx.dev/Document/v2.3
 name: Release image (reusable)
 
 on:
@@ -54,8 +54,8 @@ on:
 permissions: {}
 
 env:
-  # Lowercase by GHCR's rule; the owner segment is derived, not typed.
-  IMAGE: ghcr.io/${{ github.repository_owner }}/ferrochart
+  # Spelled out: the owner is FerroHEALTH and GHCR refuses an uppercase reference.
+  IMAGE: ghcr.io/ferrohealth/ferrochart
   # Annotate the index as well as the manifests: GHCR reads the package page
   # description from the index
   # (https://docs.docker.com/build/ci/github-actions/annotations/).

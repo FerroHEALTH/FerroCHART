@@ -4,9 +4,9 @@
 # <img src="/assets/brand/ferrochart-lockup-auto.svg" alt="FerroCHART" width="244" height="56">
 
 <!-- badges:begin -->
-[![CI](https://github.com/rubentalstra/FerroCHART/actions/workflows/ci.yml/badge.svg)](https://github.com/rubentalstra/FerroCHART/actions/workflows/ci.yml)
-[![CodeQL](https://github.com/rubentalstra/FerroCHART/actions/workflows/codeql.yml/badge.svg)](https://github.com/rubentalstra/FerroCHART/actions/workflows/codeql.yml)
-[![OpenSSF Scorecard](https://api.securityscorecards.dev/projects/github.com/rubentalstra/FerroCHART/badge)](https://scorecard.dev/viewer/?uri=github.com/rubentalstra/FerroCHART)
+[![CI](https://github.com/FerroHEALTH/FerroCHART/actions/workflows/ci.yml/badge.svg)](https://github.com/FerroHEALTH/FerroCHART/actions/workflows/ci.yml)
+[![CodeQL](https://github.com/FerroHEALTH/FerroCHART/actions/workflows/codeql.yml/badge.svg)](https://github.com/FerroHEALTH/FerroCHART/actions/workflows/codeql.yml)
+[![OpenSSF Scorecard](https://api.securityscorecards.dev/projects/github.com/FerroHEALTH/FerroCHART/badge)](https://scorecard.dev/viewer/?uri=github.com/FerroHEALTH/FerroCHART)
 [![License: BUSL-1.1](https://img.shields.io/badge/License-BUSL--1.1-blue.svg)](LICENSE)
 <!-- badges:end -->
 
@@ -64,7 +64,7 @@ templates rooted below COMPOSITION while every mock in the suite accepted it.
 
 The design of record is [`docs/architecture.md`](docs/architecture.md), the
 output of the research program on
-[issue #1](https://github.com/rubentalstra/FerroCHART/issues/1), where every
+[issue #1](https://github.com/FerroHEALTH/FerroCHART/issues/1), where every
 decision carries a citation or an explicit note that no specification governs
 it. Section 14 is the build order, and the milestones track it.
 
@@ -76,7 +76,7 @@ default path needs both endpoints; the `demo` profile starts FerroEHR and
 FerroTERM alongside it instead.
 
 ```sh
-curl -LO https://github.com/rubentalstra/FerroCHART/releases/latest/download/compose.yaml
+curl -LO https://github.com/FerroHEALTH/FerroCHART/releases/latest/download/compose.yaml
 docker compose --profile demo up
 ```
 
@@ -173,7 +173,7 @@ beside them.
 ## The family
 
 FerroCHART is one of the [FerroHEALTH](https://ferrohealth.eu) servers:
-[FerroEHR](https://github.com/rubentalstra/FerroEHR) stores the data,
+[FerroEHR](https://github.com/FerroHEALTH/FerroEHR) stores the data,
 [FerroTERM](https://github.com/rubentalstra/FerroTERM) answers the terminology
 questions, [FerroBRIDGE](https://github.com/rubentalstra/FerroBRIDGE) moves it
 to FHIR and OMOP, and FerroCHART is how it gets entered in the first place.

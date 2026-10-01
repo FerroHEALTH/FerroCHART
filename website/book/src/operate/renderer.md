@@ -202,7 +202,7 @@ the CI job uploads that directory when a run fails.
 To drive the published container image instead of a build of this tree:
 
 ```console
-$ scripts/ui-e2e.sh --image ghcr.io/rubentalstra/ferrochart:0.1.0
+$ scripts/ui-e2e.sh --image ghcr.io/ferrohealth/ferrochart:0.1.0
 ```
 
 It pulls the image, starts it over the same two templates and the same
@@ -222,4 +222,4 @@ Both are required together. A browser inside a container reaches a server on
 the host through the host gateway rather than on `127.0.0.1`, and a browser
 that cannot reach the address is a red lane with no defect behind it.
 
-[overlay]: https://github.com/rubentalstra/FerroCHART/issues/27
+[overlay]: https://github.com/FerroHEALTH/FerroCHART/issues/27

@@ -38,3 +38,8 @@
 - [No fifth sibling product](no-fifth-sibling-product.md): the family is four
   products; a fifth clinical-knowledge name was an idea only and is never
   written in this repository
+- [Repo moved to FerroHEALTH](repo-moved-to-ferrohealth.md): 2026-10-01 the
+  repository is `FerroHEALTH/FerroCHART` and the image
+  `ghcr.io/ferrohealth/ferrochart`; releases up to v0.1.0 stay signed as
+  `rubentalstra/FerroCHART`; FerroTERM, FerroBRIDGE and the Sonar key keep the
+  user account

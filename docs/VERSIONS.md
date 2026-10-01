@@ -15,7 +15,7 @@ No specification governs this file; it is FerroCHART's own design.
 ## Specifications
 
 The research on
-[issue #1](https://github.com/rubentalstra/FerroCHART/issues/1) chose each
+[issue #1](https://github.com/FerroHEALTH/FerroCHART/issues/1) chose each
 release and records the ground in `docs/architecture.md` §2. A component
 release carries documents at different maturity levels inside one number, so a
 citation names the component release, the document, and the section.

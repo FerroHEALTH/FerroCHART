@@ -26,7 +26,7 @@ tracker is the live version.
 After it, `v0.1.2` closes the gaps between the entered-value document and the
 Reference Model and turns the round trip into an instrument, and `v0.2.0` is
 the surface a person lays a form out on. The
-[milestones](https://github.com/rubentalstra/FerroCHART/milestones) carry what
+[milestones](https://github.com/FerroHEALTH/FerroCHART/milestones) carry what
 is in each, and a release is cut when its milestone reaches zero open issues.
 
-[arch]: https://github.com/rubentalstra/FerroCHART/blob/main/docs/architecture.md
+[arch]: https://github.com/FerroHEALTH/FerroCHART/blob/main/docs/architecture.md

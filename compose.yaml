@@ -30,8 +30,8 @@
 # published under the Business Source License 1.1 by the same author, and each
 # with its own LICENSE:
 #
-#   https://github.com/rubentalstra/FerroCHART/blob/main/LICENSE
-#   https://github.com/rubentalstra/FerroEHR/blob/main/LICENSE
+#   https://github.com/FerroHEALTH/FerroCHART/blob/main/LICENSE
+#   https://github.com/FerroHEALTH/FerroEHR/blob/main/LICENSE
 #   https://github.com/rubentalstra/FerroTERM/blob/main/LICENSE
 #
 # This file references those images; it does not distribute them. Running the
@@ -102,7 +102,7 @@
 
 services:
   ferrochart:
-    image: ghcr.io/rubentalstra/ferrochart:${FERROCHART_VERSION:-0.1.0}
+    image: ghcr.io/ferrohealth/ferrochart:${FERROCHART_VERSION:-0.1.0}
     restart: unless-stopped
     ports:
       - "${FERROCHART_BIND_HOST:-127.0.0.1}:${FERROCHART_PORT:-8080}:8080"

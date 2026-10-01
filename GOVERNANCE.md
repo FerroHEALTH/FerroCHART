@@ -33,7 +33,7 @@ drift out of sync with the tree
 
 | Kind of decision                   | Where it lives                                                                                     |
 |------------------------------------|----------------------------------------------------------------------------------------------------|
-| What to work on next               | a [GitHub issue](https://github.com/rubentalstra/FerroCHART/issues); the open list is the worklist |
+| What to work on next               | a [GitHub issue](https://github.com/FerroHEALTH/FerroCHART/issues); the open list is the worklist |
 | Direction and status, publicly     | the roadmap project board, a view over the tracker (`.claude/rules/project-board.md`)              |
 | Why a change looks the way it does | the pull request description that landed it, and the issue's closing comment                        |
 | What a release contains            | [`CHANGELOG.md`](CHANGELOG.md) and the `vX.Y.Z` milestone                                          |
@@ -46,7 +46,7 @@ exists only in a conversation is not a decision this project made.
 ## The design phase, and why nothing is built yet
 
 FerroCHART started as a research program rather than a codebase
-([issue #1](https://github.com/rubentalstra/FerroCHART/issues/1)). The
+([issue #1](https://github.com/FerroHEALTH/FerroCHART/issues/1)). The
 foundation of a form builder is how a template becomes a form and how
 hand-authored layout survives a template revision, and getting that wrong is
 expensive to undo, so the evidence comes first and the code follows. Until that

@@ -13,7 +13,7 @@ authors:
   - given-names: Ruben
     family-names: Talstra
 license: BUSL-1.1
-repository-code: "https://github.com/rubentalstra/FerroCHART"
+repository-code: "https://github.com/FerroHEALTH/FerroCHART"
 url: "https://ferrochart.eu"
 keywords:
   - openEHR

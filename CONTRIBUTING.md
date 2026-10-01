@@ -8,7 +8,7 @@ operational template into a form definition, renders that form for a clinician,
 and turns the entered values back into a COMPOSITION committed to any openEHR
 CDR. It is in its **design phase**: there is no code, and the architecture is the output of the
 research program on
-[issue #1](https://github.com/rubentalstra/FerroCHART/issues/1), which
+[issue #1](https://github.com/FerroHEALTH/FerroCHART/issues/1), which
 produces `docs/architecture.md`. The working discipline is
 [`CLAUDE.md`](CLAUDE.md). Read it before making a change.
 

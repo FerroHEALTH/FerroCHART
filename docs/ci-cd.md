@@ -152,7 +152,7 @@ SLSA claim are in `docs/release.md`.
 could have poisoned may influence an artifact a lane signs, and that costs a
 cold build of the workspace four times per release.
 
-The image is `ghcr.io/rubentalstra/ferrochart`, an index over `linux/amd64` and
+The image is `ghcr.io/ferrohealth/ferrochart`, an index over `linux/amd64` and
 `linux/arm64` built from `docker/Dockerfile`. The asset inventory, the
 verification commands, and the checklist a cut follows are `docs/release.md`.
 
@@ -178,7 +178,7 @@ Each state below was read from the API rather than remembered.
 | Artifact attestations, for the release lane when it lands | done: `gh attestation verify --signer-workflow …/release-build.yml` exits 0 against the published `v0.0.2` binaries |
 | The `ferrochart` GHCR package is public and linked to this repository | done: the package is public with 15 versions, and the `v0.0.2` image lane's own consumer verification passed |
 | The `SONAR_TOKEN` secret and the SonarCloud project `rubentalstra_FerroCHART`, with Automatic Analysis off (`.claude/rules/ai-code-review.md`) | done 2026-09-06: `sonar.yml` is green and now imports Rust coverage |
-| Pages publishes from GitHub Actions and serves `ferrochart.eu` with HTTPS enforced; the apex A records point at the four GitHub Pages addresses, `www` is a CNAME to `rubentalstra.github.io`, and the domain is verified for the account | done 2026-09-07. The certificate does not provision on verification alone: clearing the custom domain and setting it again started it, and `https_enforced` took immediately after |
+| Pages publishes from GitHub Actions and serves `ferrochart.eu` with HTTPS enforced; the apex A records point at the four GitHub Pages addresses, `www` is a CNAME to `FerroHEALTH.github.io`, and the domain is verified for the organization | done 2026-09-07, and set again 2026-10-01 after the move to FerroHEALTH, which left the custom domain empty. The certificate does not provision on verification alone: clearing the custom domain and setting it again started it, and `https_enforced` took immediately after |
 | The label bootstrap (`scripts/gh/labels.sh`) | done: the type, priority, `spec:*`, `compat`, `ux`, `research` and `upstream-report` labels all exist |
 | The "FerroCHART Roadmap" Project (v2), and the `project` token scope on the working clone (`.claude/rules/project-board.md`) | open: every `scripts/gh/project.sh` call fails until it exists |
 | Registration at bestpractices.dev, with the returned badge added to the README | open |

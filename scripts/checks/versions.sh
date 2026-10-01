@@ -249,10 +249,10 @@ echo "== quickstart image tag (compose.yaml <-> Cargo.toml)"
 # releases and have nothing here to agree with, so the check on them is only
 # that none of them floats on a mutable `latest`.
 if [ -f compose.yaml ] && [ -f Cargo.toml ]; then
-  compose_ver="$(sed -nE 's|^[[:space:]]*image:[[:space:]]*ghcr\.io/rubentalstra/ferrochart:\$\{[A-Z_]+:-([^}]*)\}.*|\1|p' compose.yaml | head -n1)"
+  compose_ver="$(sed -nE 's|^[[:space:]]*image:[[:space:]]*ghcr\.io/ferrohealth/ferrochart:\$\{[A-Z_]+:-([^}]*)\}.*|\1|p' compose.yaml | head -n1)"
   cargo_ver_c="$(toml_val "[workspace.package]" version Cargo.toml)"
   if [ -z "$compose_ver" ]; then
-    bad "compose.yaml has no ghcr.io/rubentalstra/ferrochart image tag default"
+    bad "compose.yaml has no ghcr.io/ferrohealth/ferrochart image tag default"
   elif [ "$compose_ver" != "$cargo_ver_c" ]; then
     bad "compose.yaml pulls ferrochart:$compose_ver, root Cargo.toml says $cargo_ver_c"
   else

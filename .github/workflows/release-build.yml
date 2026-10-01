@@ -17,8 +17,8 @@
 # certificate names THIS workflow as the signer, which a consumer can demand:
 #
 #   gh attestation verify ferrochart-<tag>-<target>.tar.gz \
-#     -R rubentalstra/FerroCHART \
-#     --signer-workflow rubentalstra/FerroCHART/.github/workflows/release-build.yml
+#     -R FerroHEALTH/FerroCHART \
+#     --signer-workflow FerroHEALTH/FerroCHART/.github/workflows/release-build.yml
 #
 # That flag is the consumer-visible prize: it lets a verifier insist an
 # artifact came from this lane rather than from any workflow that happens to

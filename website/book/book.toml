@@ -26,10 +26,10 @@ build-dir = "book"
 site-url = "/docs/"
 default-theme = "rust"
 preferred-dark-theme = "coal"
-git-repository-url = "https://github.com/rubentalstra/FerroCHART"
+git-repository-url = "https://github.com/FerroHEALTH/FerroCHART"
 # mdBook 0.5.4 expands {path} to the path under the book root, which already
 # begins with src/, so the template stops at the book directory.
-edit-url-template = "https://github.com/rubentalstra/FerroCHART/edit/main/website/book/{path}"
+edit-url-template = "https://github.com/FerroHEALTH/FerroCHART/edit/main/website/book/{path}"
 
 [output.html.search]
 enable = true

@@ -90,9 +90,9 @@ Every release asset is checksummed and carries a Sigstore attestation, so you
 can check where a binary came from before you trust it:
 
 ```sh
-gh attestation verify ferrochart-v0.1.0-x86_64-unknown-linux-musl.tar.gz \
-  --repo rubentalstra/FerroCHART \
-  --signer-workflow rubentalstra/FerroCHART/.github/workflows/release-build.yml
+gh attestation verify ferrochart-v0.1.1-x86_64-unknown-linux-musl.tar.gz \
+  --repo FerroHEALTH/FerroCHART \
+  --signer-workflow FerroHEALTH/FerroCHART/.github/workflows/release-build.yml
 ```
 
 ## Why this exists

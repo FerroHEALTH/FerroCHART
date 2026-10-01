@@ -201,12 +201,12 @@ lane runs it after the site is assembled. Reported upstream as #108.
 
 The product version is the workspace `version` in the root `Cargo.toml`, which
 every member inherits, and the table below is the one place it is pinned. The
-releases run 0.0.1 to 0.0.5 and then 0.1.0; a milestone is the release it
+releases run 0.0.1 to 0.0.5 and then 0.1.0 and 0.1.1; a milestone is the release it
 names.
 
 | Item | Pin | Repeated in |
 |---|---|---|
-| Product version | 0.1.0 | root `Cargo.toml` `[workspace.package]` `version`, `CITATION.cff` `version` |
+| Product version | 0.1.1 | root `Cargo.toml` `[workspace.package]` `version`, `CITATION.cff` `version` |
 
 `CITATION.cff` tracks this row exactly, and `scripts/checks/versions.sh`
 compares the row, the root `Cargo.toml` `[workspace.package]` `version` and

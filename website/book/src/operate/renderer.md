@@ -202,7 +202,7 @@ the CI job uploads that directory when a run fails.
 To drive the published container image instead of a build of this tree:
 
 ```console
-$ scripts/ui-e2e.sh --image ghcr.io/ferrohealth/ferrochart:0.1.0
+$ scripts/ui-e2e.sh --image ghcr.io/ferrohealth/ferrochart:0.1.1
 ```
 
 It pulls the image, starts it over the same two templates and the same

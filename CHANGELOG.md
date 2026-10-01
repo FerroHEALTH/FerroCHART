@@ -21,6 +21,8 @@ the build order.
 
 ## [Unreleased]
 
+## [0.1.1] - 2026-10-01
+
 ### Added
 
 - The browser battery drives the published container image (#166).
@@ -1186,7 +1188,8 @@ the build order.
   The configuration is FerroBRIDGE's, adapted from the FHIR and OMOP oracles to
   the openEHR Reference Model, the Archetype Object Model, ITS-REST, and AQL.
 
-[Unreleased]: https://github.com/FerroHEALTH/FerroCHART/compare/v0.1.0...HEAD
+[Unreleased]: https://github.com/FerroHEALTH/FerroCHART/compare/v0.1.1...HEAD
+[0.1.1]: https://github.com/FerroHEALTH/FerroCHART/compare/v0.1.0...v0.1.1
 [0.1.0]: https://github.com/FerroHEALTH/FerroCHART/compare/v0.0.5...v0.1.0
 [0.0.5]: https://github.com/FerroHEALTH/FerroCHART/compare/v0.0.4...v0.0.5
 [0.0.4]: https://github.com/FerroHEALTH/FerroCHART/compare/v0.0.3...v0.0.4

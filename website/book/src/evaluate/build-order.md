@@ -3,7 +3,7 @@
 The tracker is the scope. Milestones are delivery promises, and a release is
 cut when its milestone reaches zero open issues.
 
-Six releases are published, `v0.0.1` through `v0.1.0`. A template compiles to a
+Seven releases are published, `v0.0.1` through `v0.1.1`. A template compiles to a
 form, a browser renders it against the layout a person authored, and the round
 trip against a real CDR runs on every pull request: measured against the 123
 openEHR CKM templates this repository vendors, 121 read and all 121 derive,
@@ -21,7 +21,7 @@ tracker is the live version.
 | `v0.0.4` | The overlay store, its geometry, replay, and the differential report. |
 | `v0.0.5` | The ITS-REST client, the composition builder, read-back, validation, and the terminology client. |
 | `v0.1.0` | The renderer: a control for every field kind, the screens it draws them on, and the published format a renderer reads. |
-| `v0.1.1` | In progress. The renderer and the release: a form a person can actually fill, the layout overlay reaching the browser, the round trip against a real CDR in CI, and every published artefact carrying what it claims. |
+| `v0.1.1` | A form a person can fill: the layout overlay reaching the browser, a partial date by its parts, a duration as a number and a unit, the round trip against a real CDR on every pull request, and the browser battery against the published image. |
 
 After it, `v0.1.2` closes the gaps between the entered-value document and the
 Reference Model and turns the round trip into an instrument, and `v0.2.0` is

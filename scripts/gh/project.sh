@@ -14,13 +14,12 @@
 # the ONLY board-managed datum, and this script deliberately exposes nothing
 # else. Policy: .claude/rules/project-board.md.
 #
-# OWNER SETUP REQUIRED: the board is not created by this script. The repository
-# owner must first create a GitHub Project (v2) titled "FerroCHART Roadmap" under
-# the `FerroHEALTH` organization, with a single-select "Status" field carrying the
-# options Todo / In Progress / Done (and, for the roadmap view, a Date field
-# named "Target date"), then grant this clone the `project` token scope
-# (`gh auth refresh -s project`). Until that project exists, every command here
-# fails loud with "no project titled 'FerroCHART Roadmap'".
+# The board is https://github.com/orgs/FerroHEALTH/projects/4, a GitHub Project
+# (v2) titled "FerroCHART Roadmap" with a single-select "Status" field carrying
+# Todo / In Progress / Done and a Date field named "Target date". This script
+# does not create it. The clone needs the `project` token scope
+# (`gh auth refresh -s project`); without the board, every command here fails
+# loud with "no project titled 'FerroCHART Roadmap'".
 #
 # Official docs (durable references, the ONLY citations allowed for this):
 #   gh project commands .. https://cli.github.com/manual/gh_project

@@ -27,5 +27,6 @@ The repository was transferred from `rubentalstra/FerroCHART` to the
 
 **Why:** the owner moved the product line under one organization.
 **How to apply:** new links name `FerroHEALTH/FerroCHART`; FerroEHR links name
-`FerroHEALTH/FerroEHR`. The roadmap board, once created, lives under the
-organization ([[sibling-projects]]).
+`FerroHEALTH/FerroEHR`. The roadmap board is
+<https://github.com/orgs/FerroHEALTH/projects/4>, copied from FerroEHR's
+([[sibling-projects]]).

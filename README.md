@@ -73,11 +73,14 @@ it. Section 14 is the build order, and the milestones track it.
 A release publishes a `compose.yaml` you can run without cloning anything.
 FerroCHART talks to an openEHR CDR and a FHIR terminology server, so the
 default path needs both endpoints; the `demo` profile starts FerroEHR and
-FerroTERM alongside it instead.
+FerroTERM alongside it instead. Compose reads both endpoints before it looks at
+a profile, so the demo still names them, pointing at the services it starts.
 
 ```sh
 curl -LO https://github.com/FerroHEALTH/FerroCHART/releases/latest/download/compose.yaml
-docker compose --profile demo up
+FERROCHART_CDR_URL=http://ferroehr:8080/ferroehr/rest/openehr \
+FERROCHART_TERM_URL=http://ferroterm:8080/r4 \
+  docker compose --profile demo up
 ```
 
 The demo profile pulls three separately licensed images and exists for

@@ -1,4 +1,4 @@
-<!-- SPDX-FileCopyrightText: Ruben Talstra -->
+<!-- SPDX-FileCopyrightText: Vernum Projecten B.V. -->
 <!-- SPDX-License-Identifier: BUSL-1.1 -->
 
 # Changelog
@@ -88,12 +88,7 @@ the build order.
 - `scripts/checks/changelog.sh`, which refuses a release section with two
   headings of one change type (#184). Every pull request adds an entry under
   `[Unreleased]`, and the quick way to do that is to paste a fresh
-  `### Changed` - The Licensor and copyright holder of the project's own work is Vernum
-  Projecten B.V. (#214). Every `Licensor:`, copyright and
-  `SPDX-FileCopyrightText` line names the company. The licence terms are
-  unchanged, and maintainer credit stays a person.
-
-above the old one; three of those and one release has three
+  `### Changed` above the old one; three of those and one release has three
   Changed sections and a reader can no longer find anything. It also checks
   the headings are the six Keep a Changelog names, in the order that
   specification lists them, and that none is empty. Every section in the file
@@ -115,6 +110,11 @@ above the old one; three of those and one release has three
   coverage found #191.
 
 ### Changed
+
+- The Licensor and copyright holder of the project's own work is Vernum
+  Projecten B.V. (#214). Every `Licensor:`, copyright and
+  `SPDX-FileCopyrightText` line names the company. The licence terms are
+  unchanged, and maintainer credit stays a person.
 
 - **The repository moved to the FerroHEALTH organization**
   (<https://github.com/FerroHEALTH/FerroCHART>, #224); the old
@@ -282,6 +282,12 @@ above the old one; three of those and one release has three
   takes." (#178).
 
 ### Fixed
+
+- The README's quick start runs as written (#213). `docker compose --profile
+  demo up` failed before starting anything, because Compose resolves
+  `FERROCHART_CDR_URL` and `FERROCHART_TERM_URL` before it considers a profile;
+  the README and the compose header now set both to the demo services in the
+  same command.
 
 - A timezone picked before the date was resolved against the wrong instant
   (#197). A zone is not an offset, and the offset was resolved once, when the

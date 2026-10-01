@@ -13,16 +13,20 @@ tracker, never a second tracker.** This file is the policy (what the board may
 and may not carry) and the canonical commands (the one sanctioned write path is
 `scripts/gh/project.sh`).
 
-## Owner-created
+## The board
 
-**The board does not exist until the owner creates it.** The repository owner
-must create a GitHub Project (v2) titled **"FerroCHART Roadmap"** under the
-`FerroHEALTH` organization, with the built-in single-select `Status` field carrying
-exactly `Todo` / `In Progress` / `Done`, plus a Date field named `Target date`
-for the roadmap layout, and grant the working clone the `project` token scope
-(`gh auth refresh -s project`). Until then, every `scripts/gh/project.sh`
-command fails loud with "no project titled 'FerroCHART Roadmap'". The board
-configuration intent (fields, views, automations) is at the bottom of this file.
+**The board is <https://github.com/orgs/FerroHEALTH/projects/4>**, created
+2026-10-01 as a copy of the FerroEHR board under the `FerroHEALTH`
+organization, public and linked to the repository. It carries the built-in
+single-select `Status` field with exactly `Todo` / `In Progress` / `Done`,
+plus a Date field named `Target date` for the roadmap layout. The working
+clone needs the `project` token scope (`gh auth refresh -s project`); without
+the board, every `scripts/gh/project.sh` command fails loud with "no project
+titled 'FerroCHART Roadmap'". The board configuration intent (fields, views,
+automations) is at the bottom of this file.
+
+A copy does not carry the auto-add workflow, and the "Needs attention" view
+kept FerroEHR's filter; both are UI-only settings the owner sets by hand.
 
 ## The one-datum rule
 

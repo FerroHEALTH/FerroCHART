@@ -16,11 +16,10 @@
 #
 # ── The demo profile, and the three licences it pulls ────────────────────────
 #
-#   docker compose --profile demo up
-#
 # The demo profile additionally starts FerroEHR, its PostgreSQL, and
-# FerroTERM, so the stack runs end to end with nothing else installed. Point
-# FerroCHART at them in the same command:
+# FerroTERM, so the stack runs end to end with nothing else installed. Compose
+# reads both endpoints before it looks at a profile, so point FerroCHART at
+# them in the same command:
 #
 #   FERROCHART_CDR_URL=http://ferroehr:8080/ferroehr/rest/openehr \
 #   FERROCHART_TERM_URL=http://ferroterm:8080/r4 \

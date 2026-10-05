@@ -1,4 +1,4 @@
-<!-- SPDX-FileCopyrightText: Vernum Projecten B.V. -->
+<!-- SPDX-FileCopyrightText: Cadasto B.V. -->
 <!-- SPDX-License-Identifier: BUSL-1.1 -->
 
 # Changelog
@@ -20,6 +20,13 @@ A release publishes binaries for four Linux targets; what they do grows with
 the build order.
 
 ## [Unreleased]
+
+### Changed
+
+- The Licensor and copyright holder of the project's own work is Cadasto B.V.,
+  which replaces Vernum Projecten B.V. (#229). Every `Licensor:`, copyright and
+  `SPDX-FileCopyrightText` line names the new company. The licence terms are
+  unchanged, and maintainer credit stays a person.
 
 ## [0.1.1] - 2026-10-01
 

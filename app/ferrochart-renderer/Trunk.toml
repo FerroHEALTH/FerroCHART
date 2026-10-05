@@ -1,4 +1,4 @@
-# SPDX-FileCopyrightText: Vernum Projecten B.V.
+# SPDX-FileCopyrightText: Cadasto B.V.
 # SPDX-License-Identifier: BUSL-1.1
 # The renderer's build. `docs/VERSIONS.md` records the Trunk and Tailwind pins
 # and `scripts/checks/versions.sh` fails when this file and that table

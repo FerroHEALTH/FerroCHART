@@ -6,13 +6,15 @@ metadata:
   type: project
 ---
 
-<!-- SPDX-FileCopyrightText: Vernum Projecten B.V. -->
+<!-- SPDX-FileCopyrightText: Cadasto B.V. -->
 <!-- SPDX-License-Identifier: BUSL-1.1 -->
 
 FerroCHART's own code and text are under the **Business Source License 1.1**,
 on the terms FerroEHR, FerroTERM, and FerroBRIDGE use. The owner set this when
 the repository was created on 2026-09-06, so there is no earlier licence in
-this repository's history.
+this repository's history. The Licensor and copyright holder was Ruben
+Talstra, then Vernum Projecten B.V. (2026-09-16, #214), and is Cadasto B.V.
+from 2026-10-05 (#229); the terms did not change with the holder.
 
 The terms, as `LICENSE` and `NOTICE` state them:
 
@@ -30,7 +32,7 @@ captures health data through the Licensed Work.
 
 **How to apply:**
 
-- Every first-party file carries `SPDX-FileCopyrightText: Vernum Projecten B.V.` and
+- Every first-party file carries `SPDX-FileCopyrightText: Cadasto B.V.` and
   `SPDX-License-Identifier: BUSL-1.1` in its header. The pin-matrix guard
   (`scripts/checks/versions.sh`) fails on a stale licence claim anywhere in the
   tree.

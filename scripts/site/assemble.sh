@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# SPDX-FileCopyrightText: Vernum Projecten B.V.
+# SPDX-FileCopyrightText: Cadasto B.V.
 # SPDX-License-Identifier: BUSL-1.1
 # assemble.sh: the site as GitHub Pages serves it, from the landing page, the
 # brand assets, and the book, into one directory.

@@ -16,6 +16,13 @@ this repository's history. The Licensor and copyright holder was Ruben
 Talstra, then Vernum Projecten B.V. (2026-09-16, #214), and is Cadasto B.V.
 from 2026-10-05 (#229); the terms did not change with the holder.
 
+Cadasto B.V. also runs the business side from 2026-10-05 (#231): the
+commercial licence and any other business or licensing question go to
+info@cadasto.com or https://www.cadasto.com/contact/, and `LICENSE` names that
+contact. Ruben Talstra (@rubentalstra) stays the maintainer and handles the
+technical side: code, review, releases, issues and security reports. Never
+send a commercial licence to the maintainer.
+
 The terms, as `LICENSE` and `NOTICE` state them:
 
 - Free to read, build, modify, and redistribute.

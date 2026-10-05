@@ -26,8 +26,8 @@
 #     docker compose --profile demo up
 #
 # FerroCHART, FerroEHR and FerroTERM are three separate products, each
-# published under the Business Source License 1.1 by the same author, and each
-# with its own LICENSE:
+# published under the Business Source License 1.1 by the same Licensor,
+# Cadasto B.V., and each with its own LICENSE:
 #
 #   https://github.com/FerroHEALTH/FerroCHART/blob/main/LICENSE
 #   https://github.com/FerroHEALTH/FerroEHR/blob/main/LICENSE
@@ -36,8 +36,10 @@
 # This file references those images; it does not distribute them. Running the
 # demo profile is a use of all three, and BUSL-1.1 is free for every
 # non-production use and for non-commercial production use. Any other
-# production use needs a commercial licence from the author, for each product
-# you run, and always for a hosted, managed, or embedded service.
+# production use needs a commercial licence from Cadasto B.V., for each product
+# you run, and always for a hosted, managed, or embedded service. Cadasto B.V.
+# handles the business side: info@cadasto.com or
+# https://www.cadasto.com/contact/. Technical questions go to the maintainer.
 #
 # THE DEMO PROFILE IS FOR EVALUATION. It carries development credentials
 # (FerroEHR serves one Basic user, ferroehr/ferroehr, with RBAC disabled) and

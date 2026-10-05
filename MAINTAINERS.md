@@ -19,13 +19,19 @@ to grow into.
 
 **The bus factor of this project is one.** There is exactly one person with
 write access to the repository, one person who can publish a release, and one
-person who can accept a pull request. No second maintainer exists, no
-organisation stands behind the project, and no legal entity is a party to it.
+person who can accept a pull request. No second maintainer exists.
 
 Everything else in this file follows from that sentence, and no wording
 elsewhere in the repository should be read as softening it. The path out is in
 [GOVERNANCE.md](GOVERNANCE.md): becoming a maintainer is a defined route, and
 it is open.
+
+Cadasto B.V. is the Licensor and copyright holder, and it handles the business
+side of the project, the commercial licence included: write to
+[info@cadasto.com](mailto:info@cadasto.com) or use
+<https://www.cadasto.com/contact/>. The maintainer handles the technical side:
+the code, review, releases, issues and security reports. The bus factor of one
+is about those technical roles.
 
 ## Publishing identities and where they live
 
@@ -47,8 +53,8 @@ one person's GitHub account or one person's hardware. Keyless Sigstore signing
 removes the *stored secret* risk for releases (there is no long-lived signing
 key to leak), and it does not distribute the *authority*, which is still one
 account's. That is the residual risk, and it is stated rather than mitigated
-because no mitigation is currently available to a one-person project without a
-legal entity behind it.
+because no mitigation is currently available to a project with one person in
+its technical roles.
 
 ## If the maintainer is unavailable
 

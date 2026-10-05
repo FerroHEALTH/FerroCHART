@@ -24,6 +24,13 @@ Offering FerroCHART, or a work derived from it, to third parties as a hosted,
 managed or embedded service needs one in every case, and so does selling,
 sublicensing or otherwise distributing it for a fee.
 
+A commercial licence is arranged with Cadasto B.V., the Licensor, which
+handles the business side of FerroCHART: write to
+[info@cadasto.com](mailto:info@cadasto.com) or use
+<https://www.cadasto.com/contact/>. Technical questions go to the maintainer
+named in
+[MAINTAINERS.md](https://github.com/FerroHEALTH/FerroCHART/blob/main/MAINTAINERS.md).
+
 ## Four years later
 
 Each version becomes available under the Apache License 2.0 four years after

@@ -19,8 +19,9 @@
   here
 - [Licence: BUSL 1.1](license-busl.md): set at repository creation 2026-09-06
   on the family's terms; non-commercial production free, commercial production
-  needs a licence, Apache 2.0 four years after each version; inbound equals
-  outbound, no contributor licence agreement
+  needs a licence from Cadasto B.V. (info@cadasto.com, the business side),
+  Apache 2.0 four years after each version; inbound equals outbound, no
+  contributor licence agreement
 - [Owner work style](owner-work-style.md): research-first and evidence-based,
   from first principles; confirm foundational decisions before scaffolding; no
   code while the design is open

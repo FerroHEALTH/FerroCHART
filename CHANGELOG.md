@@ -27,6 +27,11 @@ the build order.
   which replaces Vernum Projecten B.V. (#229). Every `Licensor:`, copyright and
   `SPDX-FileCopyrightText` line names the new company. The licence terms are
   unchanged, and maintainer credit stays a person.
+- A commercial licence and any other business question go to Cadasto B.V., at
+  info@cadasto.com or https://www.cadasto.com/contact/ (#231). `LICENSE`, the
+  README, the book, the site and `compose.yaml` name that contact, and
+  MAINTAINERS.md and GOVERNANCE.md say Cadasto B.V. handles the business side.
+  The maintainer keeps the technical side.
 
 ## [0.1.1] - 2026-10-01
 

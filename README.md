@@ -91,8 +91,8 @@ can check where a binary came from before you trust it:
 
 ```sh
 gh attestation verify ferrochart-v0.1.1-x86_64-unknown-linux-musl.tar.gz \
-  --repo FerroHEALTH/FerroFORMS \
-  --signer-workflow FerroHEALTH/FerroFORMS/.github/workflows/release-build.yml
+  --repo FerroHEALTH/FerroCHART \
+  --signer-workflow FerroHEALTH/FerroCHART/.github/workflows/release-build.yml
 ```
 
 ## Why this exists

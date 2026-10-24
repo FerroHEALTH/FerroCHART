@@ -38,14 +38,14 @@
   /* The palette, aliased from assets/brand/tokens.css, which index.html links
      ahead of this file. No hex value is restated here, so a change to the
      brand palette reaches this page without a second edit. */
-  --fc-rose: var(--ferrochart-rose);
-  --fc-rose-deep: var(--ferrochart-rose-deep);
-  --fc-rose-light: var(--ferrochart-rose-light);
-  --fc-blush: var(--ferrochart-blush);
-  --fc-ink: var(--ferrochart-ink);
-  --fc-mist: var(--ferrochart-mist);
-  --fc-tile: var(--ferrochart-tile);
-  --fc-surface: var(--ferrochart-surface);
+  --fc-rose: var(--ferroforms-rose);
+  --fc-rose-deep: var(--ferroforms-rose-deep);
+  --fc-rose-light: var(--ferroforms-rose-light);
+  --fc-blush: var(--ferroforms-blush);
+  --fc-ink: var(--ferroforms-ink);
+  --fc-mist: var(--ferroforms-mist);
+  --fc-tile: var(--ferroforms-tile);
+  --fc-surface: var(--ferroforms-surface);
 
   /* The roles. Each names the ground it is for, because the mark colour and
      the text colour are not the same value on either ground. */

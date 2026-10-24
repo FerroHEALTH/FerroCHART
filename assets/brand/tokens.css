@@ -1,6 +1,6 @@
 /* SPDX-FileCopyrightText: Cadasto B.V. */
 /* SPDX-License-Identifier: BUSL-1.1 */
-/* FerroCHART brand tokens, the "Rose & Iron" palette. Import this file, or
+/* FerroFORMS brand tokens, the "Rose & Iron" palette. Import this file, or
    copy the values.
 
    Every colour carries its measured contrast against both grounds, and what
@@ -8,28 +8,28 @@
    and covers a mark, a rule, or a large heading, and "no" means the pair is
    not usable. Read the figure before using a token somewhere new. */
 :root {
-  /* Core palette. Ratios are against --ferrochart-surface / --ferrochart-tile. */
-  --ferrochart-rose: #C2185B;       /* primary mark and accents. 5.61 text / 3.19 graphics */
-  --ferrochart-rose-deep: #9D1E52;  /* hover, pressed, text on light. 7.32 text / 2.44 no */
-  --ferrochart-rose-light: #E04F84; /* the same voice on a dark ground. 3.57 graphics / 5.01 text */
-  --ferrochart-blush: #F48FB1;      /* the secondary stroke in the mark. 2.13 no / 8.39 text */
-  --ferrochart-ink: #0f172a;        /* text on light */
-  --ferrochart-mist: #f1f5f9;       /* text on dark */
-  --ferrochart-tile: #0b1220;       /* dark tile background */
-  --ferrochart-surface: #f8fafc;    /* light surface background */
+  /* Core palette. Ratios are against --ferroforms-surface / --ferroforms-tile. */
+  --ferroforms-rose: #C2185B;       /* primary mark and accents. 5.61 text / 3.19 graphics */
+  --ferroforms-rose-deep: #9D1E52;  /* hover, pressed, text on light. 7.32 text / 2.44 no */
+  --ferroforms-rose-light: #E04F84; /* the same voice on a dark ground. 3.57 graphics / 5.01 text */
+  --ferroforms-blush: #F48FB1;      /* the secondary stroke in the mark. 2.13 no / 8.39 text */
+  --ferroforms-ink: #0f172a;        /* text on light */
+  --ferroforms-mist: #f1f5f9;       /* text on dark */
+  --ferroforms-tile: #0b1220;       /* dark tile background */
+  --ferroforms-surface: #f8fafc;    /* light surface background */
 
   /* Roles. Each names the ground it is for, because the mark colour and the
      text colour are not the same value on either ground. */
-  --ferrochart-brand: var(--ferrochart-rose);
-  --ferrochart-brand-text: var(--ferrochart-rose-deep);
-  --ferrochart-fg: var(--ferrochart-ink);
-  --ferrochart-bg: var(--ferrochart-surface);
+  --ferroforms-brand: var(--ferroforms-rose);
+  --ferroforms-brand-text: var(--ferroforms-rose-deep);
+  --ferroforms-fg: var(--ferroforms-ink);
+  --ferroforms-bg: var(--ferroforms-surface);
 }
 @media (prefers-color-scheme: dark) {
   :root {
-    --ferrochart-brand: var(--ferrochart-rose-light);
-    --ferrochart-brand-text: var(--ferrochart-rose-light);
-    --ferrochart-fg: var(--ferrochart-mist);
-    --ferrochart-bg: var(--ferrochart-tile);
+    --ferroforms-brand: var(--ferroforms-rose-light);
+    --ferroforms-brand-text: var(--ferroforms-rose-light);
+    --ferroforms-fg: var(--ferroforms-mist);
+    --ferroforms-bg: var(--ferroforms-tile);
   }
 }

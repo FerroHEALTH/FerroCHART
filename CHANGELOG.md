@@ -37,6 +37,14 @@ the build order.
   MAINTAINERS.md and GOVERNANCE.md say Cadasto B.V. handles the business side.
   The maintainer keeps the technical side.
 
+### Security
+
+- `rustls` moves to 0.23.46 and `rustls-webpki` to 0.103.16 for
+  RUSTSEC-2026-0346, RUSTSEC-2026-0347, RUSTSEC-2026-0348, RUSTSEC-2026-0349
+  and RUSTSEC-2026-0382, `webpki-root-certs` to 1.0.11 for RUSTSEC-2026-0383,
+  and `tokio` to 1.54.1 for RUSTSEC-2026-0386. The lockfile moves; no source
+  changes.
+
 ## [0.1.1] - 2026-10-01
 
 ### Added

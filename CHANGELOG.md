@@ -27,6 +27,11 @@ the build order.
   ferroforms.eu and the repository `FerroHEALTH/FerroFORMS`. The README, the
   community and governance files, `CITATION.cff`, `llms.txt` and `NOTICE`
   carry the new name. GitHub redirects the old repository URL.
+- The brand files are renamed `ferroforms-*` (the icon and its dark and mono
+  variants, the three lockups and the social card), the lockups and the social
+  card set the FerroFORMS wordmark, and the palette tokens in
+  `assets/brand/tokens.css` are `--ferroforms-*`, with the same values. The
+  social card states the release status in place of the design-phase badge.
 - The Licensor and copyright holder of the project's own work is Cadasto B.V.,
   which replaces Vernum Projecten B.V. (#229). Every `Licensor:`, copyright and
   `SPDX-FileCopyrightText` line names the new company. The licence terms are

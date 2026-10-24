@@ -23,6 +23,10 @@ the build order.
 
 ### Changed
 
+- The product is renamed from FerroCHART to FerroFORMS, on the new domain
+  ferroforms.eu and the repository `FerroHEALTH/FerroFORMS`. The README, the
+  community and governance files, `CITATION.cff`, `llms.txt` and `NOTICE`
+  carry the new name. GitHub redirects the old repository URL.
 - The Licensor and copyright holder of the project's own work is Cadasto B.V.,
   which replaces Vernum Projecten B.V. (#229). Every `Licensor:`, copyright and
   `SPDX-FileCopyrightText` line names the new company. The licence terms are

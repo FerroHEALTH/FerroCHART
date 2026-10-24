@@ -3,7 +3,7 @@
 
 # Governance
 
-How decisions get made in FerroCHART, who makes them, and how that changes.
+How decisions get made in FerroFORMS, who makes them, and how that changes.
 
 This document describes the project as it actually operates. Where the honest
 description is "one person decides", it says so. A governance document that
@@ -12,7 +12,7 @@ a reviewer to rely on a control that is not there.
 
 ## Current structure: benevolent dictator, one maintainer
 
-FerroCHART has a single maintainer ([MAINTAINERS.md](MAINTAINERS.md)) who
+FerroFORMS has a single maintainer ([MAINTAINERS.md](MAINTAINERS.md)) who
 holds final say on every decision: what gets built, what gets merged, what gets
 released, and what the project refuses to do. There is no steering committee,
 no technical oversight body, no foundation, and no vote.
@@ -40,7 +40,7 @@ drift out of sync with the tree
 
 | Kind of decision                   | Where it lives                                                                                     |
 |------------------------------------|----------------------------------------------------------------------------------------------------|
-| What to work on next               | a [GitHub issue](https://github.com/FerroHEALTH/FerroCHART/issues); the open list is the worklist |
+| What to work on next               | a [GitHub issue](https://github.com/FerroHEALTH/FerroFORMS/issues); the open list is the worklist |
 | Direction and status, publicly     | the roadmap project board, a view over the tracker (`.claude/rules/project-board.md`)              |
 | Why a change looks the way it does | the pull request description that landed it, and the issue's closing comment                        |
 | What a release contains            | [`CHANGELOG.md`](CHANGELOG.md) and the `vX.Y.Z` milestone                                          |
@@ -52,8 +52,8 @@ exists only in a conversation is not a decision this project made.
 
 ## The design phase, and why nothing is built yet
 
-FerroCHART started as a research program rather than a codebase
-([issue #1](https://github.com/FerroHEALTH/FerroCHART/issues/1)). The
+FerroFORMS started as a research program rather than a codebase
+([issue #1](https://github.com/FerroHEALTH/FerroFORMS/issues/1)). The
 foundation of a form builder is how a template becomes a form and how
 hand-authored layout survives a template revision, and getting that wrong is
 expensive to undo, so the evidence comes first and the code follows. Until that
@@ -138,7 +138,7 @@ request:
   template revision does not destroy it.
 - **No re-modelling by hand of what a specification publishes in
   machine-readable form.** A change goes into the generator.
-- **No compile-time dependency on a particular CDR.** FerroCHART reaches any
+- **No compile-time dependency on a particular CDR.** FerroFORMS reaches any
   openEHR CDR over ITS-REST, and no single CDR is a requirement. A form builder
   that works with only one CDR is useless to the people who asked for this.
 - **No patient data in the repository**, in a fixture, or in an issue.

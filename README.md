@@ -1,12 +1,12 @@
 <!-- SPDX-FileCopyrightText: Cadasto B.V. -->
 <!-- SPDX-License-Identifier: BUSL-1.1 -->
 
-# <img src="/assets/brand/ferrochart-lockup-auto.svg" alt="FerroCHART" width="244" height="56">
+# <img src="/assets/brand/ferrochart-lockup-auto.svg" alt="FerroFORMS" width="244" height="56">
 
 <!-- badges:begin -->
-[![CI](https://github.com/FerroHEALTH/FerroCHART/actions/workflows/ci.yml/badge.svg)](https://github.com/FerroHEALTH/FerroCHART/actions/workflows/ci.yml)
-[![CodeQL](https://github.com/FerroHEALTH/FerroCHART/actions/workflows/codeql.yml/badge.svg)](https://github.com/FerroHEALTH/FerroCHART/actions/workflows/codeql.yml)
-[![OpenSSF Scorecard](https://api.securityscorecards.dev/projects/github.com/FerroHEALTH/FerroCHART/badge)](https://scorecard.dev/viewer/?uri=github.com/FerroHEALTH/FerroCHART)
+[![CI](https://github.com/FerroHEALTH/FerroFORMS/actions/workflows/ci.yml/badge.svg)](https://github.com/FerroHEALTH/FerroFORMS/actions/workflows/ci.yml)
+[![CodeQL](https://github.com/FerroHEALTH/FerroFORMS/actions/workflows/codeql.yml/badge.svg)](https://github.com/FerroHEALTH/FerroFORMS/actions/workflows/codeql.yml)
+[![OpenSSF Scorecard](https://api.securityscorecards.dev/projects/github.com/FerroHEALTH/FerroFORMS/badge)](https://scorecard.dev/viewer/?uri=github.com/FerroHEALTH/FerroFORMS)
 [![License: BUSL-1.1](https://img.shields.io/badge/License-BUSL--1.1-blue.svg)](LICENSE)
 <!-- badges:end -->
 
@@ -53,7 +53,7 @@ template admits.
 
 **The round trip runs against a real CDR on every pull request.** The `cdr`
 job starts FerroEHR from the release's own `compose.yaml`, uploads a template
-to it, commits a COMPOSITION FerroCHART built and validated, reads it back and
+to it, commits a COMPOSITION FerroFORMS built and validated, reads it back and
 compares. It is the only lane that can falsify this project's central claim, so
 it is named in the required check rather than left to a script somebody
 remembers.
@@ -64,20 +64,20 @@ templates rooted below COMPOSITION while every mock in the suite accepted it.
 
 The design of record is [`docs/architecture.md`](docs/architecture.md), the
 output of the research program on
-[issue #1](https://github.com/FerroHEALTH/FerroCHART/issues/1), where every
+[issue #1](https://github.com/FerroHEALTH/FerroFORMS/issues/1), where every
 decision carries a citation or an explicit note that no specification governs
 it. Section 14 is the build order, and the milestones track it.
 
 ## Try it
 
 A release publishes a `compose.yaml` you can run without cloning anything.
-FerroCHART talks to an openEHR CDR and a FHIR terminology server, so the
+FerroFORMS talks to an openEHR CDR and a FHIR terminology server, so the
 default path needs both endpoints; the `demo` profile starts FerroEHR and
 FerroTERM alongside it instead. Compose reads both endpoints before it looks at
 a profile, so the demo still names them, pointing at the services it starts.
 
 ```sh
-curl -LO https://github.com/FerroHEALTH/FerroCHART/releases/latest/download/compose.yaml
+curl -LO https://github.com/FerroHEALTH/FerroFORMS/releases/latest/download/compose.yaml
 FERROCHART_CDR_URL=http://ferroehr:8080/ferroehr/rest/openehr \
 FERROCHART_TERM_URL=http://ferroterm:8080/r4 \
   docker compose --profile demo up
@@ -91,8 +91,8 @@ can check where a binary came from before you trust it:
 
 ```sh
 gh attestation verify ferrochart-v0.1.1-x86_64-unknown-linux-musl.tar.gz \
-  --repo FerroHEALTH/FerroCHART \
-  --signer-workflow FerroHEALTH/FerroCHART/.github/workflows/release-build.yml
+  --repo FerroHEALTH/FerroFORMS \
+  --signer-workflow FerroHEALTH/FerroFORMS/.github/workflows/release-build.yml
 ```
 
 ## Why this exists
@@ -126,7 +126,7 @@ by the openEHR community rather than invented here.
   per generation.
 - **The openEHR model comes from the published `openehr-*` crates**, which are
   generated from the openEHR BMM schemas, rather than from a generator here.
-- **Any CDR, over ITS-REST.** FerroCHART is a client of the openEHR REST API,
+- **Any CDR, over ITS-REST.** FerroFORMS is a client of the openEHR REST API,
   never a compile-time dependency of a CDR. It works against the CDR a hospital
   already runs. A form builder that works with only one CDR is no use to the
   people who asked for this.
@@ -143,7 +143,7 @@ Every decision above, with the reasoning and the citations behind it, is in
 
 ## Licensing
 
-FerroCHART is source-available under the Business Source License 1.1
+FerroFORMS is source-available under the Business Source License 1.1
 ([`LICENSE`](LICENSE), [`NOTICE`](NOTICE)), with no open-core tier: the
 compiler, the renderer, the server, and the tools are in this repository under
 the one licence, and nothing is held back to be sold back to you.
@@ -156,15 +156,15 @@ scientific research, teaching, and use by a non-profit organisation or public
 body that is not in the course of a business, does not deliver a service for
 payment, and is not for commercial advantage. Any other production use needs a
 commercial licence from the Licensor: a hospital, clinic, or care provider
-running FerroCHART for its patients needs one, and so does a vendor,
-integrator, or any company running it in production. Offering FerroCHART, or a
+running FerroFORMS for its patients needs one, and so does a vendor,
+integrator, or any company running it in production. Offering FerroFORMS, or a
 work derived from it, to third parties as a hosted, managed, or embedded
 service that builds, renders, or captures health data, and selling,
 sublicensing, or otherwise distributing it for a fee on its own or inside
 another product, need a commercial licence in every case. Each version becomes
 Apache License 2.0 four years after that version is published. A commercial
 licence is arranged with Cadasto B.V., the Licensor, which handles the business
-side of FerroCHART: write to [info@cadasto.com](mailto:info@cadasto.com) or use
+side of FerroFORMS: write to [info@cadasto.com](mailto:info@cadasto.com) or use
 <https://www.cadasto.com/contact/>. Technical questions go to the maintainer
 named in [MAINTAINERS.md](MAINTAINERS.md).
 
@@ -177,11 +177,11 @@ beside them.
 
 ## The family
 
-FerroCHART is one of the [FerroHEALTH](https://ferrohealth.eu) servers:
+FerroFORMS is one of the [FerroHEALTH](https://ferrohealth.eu) servers:
 [FerroEHR](https://github.com/FerroHEALTH/FerroEHR) stores the data,
 [FerroTERM](https://github.com/rubentalstra/FerroTERM) answers the terminology
 questions, [FerroBRIDGE](https://github.com/rubentalstra/FerroBRIDGE) moves it
-to FHIR and OMOP, and FerroCHART is how it gets entered in the first place.
+to FHIR and OMOP, and FerroFORMS is how it gets entered in the first place.
 Each runs on its own and against other people's servers.
 
 ## Contributing

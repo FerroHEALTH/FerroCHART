@@ -2,7 +2,7 @@
 # SPDX-License-Identifier: BUSL-1.1
 cff-version: 1.2.0
 message: "If you use this software, please cite it using these metadata."
-title: "FerroCHART"
+title: "FerroFORMS"
 abstract: >-
   A pure-Rust openEHR form builder and renderer. It compiles an operational
   template into a form definition, renders that form for a clinician, and
@@ -13,8 +13,8 @@ authors:
   - given-names: Ruben
     family-names: Talstra
 license: BUSL-1.1
-repository-code: "https://github.com/FerroHEALTH/FerroCHART"
-url: "https://ferrochart.eu"
+repository-code: "https://github.com/FerroHEALTH/FerroFORMS"
+url: "https://ferroforms.eu"
 keywords:
   - openEHR
   - clinical forms

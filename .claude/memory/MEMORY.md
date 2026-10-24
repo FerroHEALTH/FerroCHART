@@ -8,10 +8,9 @@
   renderer, CDR-agnostic over ITS-REST, layout overlay kept separate from the
   compiled definition; everything else is research on issue #1; the request
   came from the openEHR community on 2026-09-06
-- [Domain ferrochart.eu](domain-ferrochart-eu.md): registered 2026-09-06 at
-  Vimexx on the family's zxcs nameservers; ferroform.eu was already taken,
-  which is why the product is not called FerroFORM; the domain is a Pages
-  setting, never a `CNAME` file
+- [Domain ferroforms.eu](domain-ferroforms-eu.md): bought October 2026 when
+  the product was renamed from FerroCHART (ferrochart.eu, up to v0.1.1) to
+  FerroFORMS; the domain is a Pages setting, never a `CNAME` file
 - [Sibling projects](sibling-projects.md): FerroEHR at `../ferroehr` is the
   reference CDR, FerroTERM at `../FerroTERM` the reference terminology server,
   FerroBRIDGE at `../FerroBRIDGE` is where this configuration came from, and

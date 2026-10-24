@@ -1,7 +1,7 @@
 <!-- SPDX-FileCopyrightText: Cadasto B.V. -->
 <!-- SPDX-License-Identifier: BUSL-1.1 -->
 
-# FerroCHART AI Statement
+# FerroFORMS AI Statement
 
 | | |
 |---|---|
@@ -14,7 +14,7 @@
 | Review | at every major or minor release, and on any trigger in §13 |
 
 **Abstract.** This document discloses how artificial-intelligence tools are
-used to develop FerroCHART, an open-source pure-Rust openEHR form builder and
+used to develop FerroFORMS, an open-source pure-Rust openEHR form builder and
 renderer. It states what the tools do and do not touch, who is accountable, which controls
 bound the work and how each is enforced, the licensing and data posture, the
 rules for contributors, the uses that are prohibited, and the limitations that
@@ -32,7 +32,7 @@ repository: the form compiler, the renderer, the composition builder, tests,
 tooling, infrastructure, documentation, and this document itself.
 
 It does not cover an AI system in the product, because there is none.
-**FerroCHART ships no AI.** No model is trained, embedded, or called at
+**FerroFORMS ships no AI.** No model is trained, embedded, or called at
 request time, and no inference happens anywhere in the served software. The
 form a clinician sees is derived from an operational template a human authored
 and a specification constrains. AI is used to *build* the software, in the same sense
@@ -47,7 +47,7 @@ code. That does not change any rule below.
 Stated plainly, because borrowed authority is worse than none:
 
 - **The EU AI Act imposes no obligation on this project.** The Act binds
-  providers and deployers of AI *systems* (Articles 2 and 3(1)); FerroCHART is
+  providers and deployers of AI *systems* (Articles 2 and 3(1)); FerroFORMS is
   neither, because it contains no AI system. Article 50's marking duties bind
   the AI tool's provider rather than the tool's user, and the European
   Commission's Article 50 FAQ places source code outside the content-marking
@@ -57,10 +57,10 @@ Stated plainly, because borrowed authority is worse than none:
   purpose, and software that retrieves, transforms, or communicates information
   without interpreting it for an individual patient does not qualify as a
   medical device. Capturing what a clinician types and rendering what is
-  already stored is that kind of software, and it is the whole of FerroCHART's
+  already stored is that kind of software, and it is the whole of FerroFORMS's
   intended purpose. The line is closer here than for a pure format converter:
   a form that computes a clinical score, flags a value, or otherwise interprets
-  an entry for an individual patient would have a medical purpose. FerroCHART
+  an entry for an individual patient would have a medical purpose. FerroFORMS
   does not do that, and adding it would be a classification decision, not a
   feature decision. A downstream integrator who gives their product a medical
   purpose brings *their* product into scope; that classification is theirs to
@@ -186,7 +186,7 @@ under this project's licence.
 No patient data, no personally identifiable health information, and no customer
 data exists anywhere in this project. It is not in the repository, the test
 fixtures, or the telemetry, and therefore not in any prompt. This matters more
-here than for most software, because FerroCHART sits in the path of clinical
+here than for most software, because FerroFORMS sits in the path of clinical
 content at the moment a clinician types it, and a reproduction is easy to build
 from real data by accident: fixtures are synthetic content invented for the test, and a report
 that carries real content is redacted rather than absorbed
@@ -228,7 +228,7 @@ This section exists because a disclosure without one is marketing.
 - **There is no acceptance instrument yet.** The project is in its design
   phase; the conformance harness is an output of the research program, so
   today's controls are the rule set, the workflow gates, and review.
-- **End-to-end verification needs two other servers.** FerroCHART is only fully
+- **End-to-end verification needs two other servers.** FerroFORMS is only fully
   exercised against a real openEHR CDR and a real terminology server, so those
   runs are heavier than a unit test and will be a periodic gate rather than a
   per-pull-request one.

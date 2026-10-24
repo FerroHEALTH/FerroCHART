@@ -3,14 +3,14 @@
 
 # Security Policy
 
-FerroCHART is an openEHR form builder and renderer: it compiles operational
+FerroFORMS is an openEHR form builder and renderer: it compiles operational
 templates into forms and commits the results to an openEHR CDR. This document
 says which versions receive security fixes and how to report a vulnerability
 privately.
 
 ## Supported versions
 
-FerroCHART is in its design phase and has no release. Once releases begin,
+FerroFORMS is in its design phase and has no release. Once releases begin,
 security fixes apply to the latest released version only; there is no back-port
 line.
 
@@ -28,7 +28,7 @@ Once the project reaches 1.0 this table will name a supported minor line.
 privately through GitHub's private vulnerability reporting:
 
 1. Open the private advisory form:
-   <https://github.com/FerroHEALTH/FerroCHART/security/advisories/new>. You
+   <https://github.com/FerroHEALTH/FerroFORMS/security/advisories/new>. You
    can also reach it from the repository's **Security** tab under **Report a
    vulnerability**.
 2. Describe the issue, the affected version or commit, and a reproduction if
@@ -45,7 +45,7 @@ Please include, where you can:
 - steps to reproduce, a proof of concept, or a failing request;
 - any suggested remediation.
 
-**Never include patient data in a report.** FerroCHART sits in the path of
+**Never include patient data in a report.** FerroFORMS sits in the path of
 clinical data at the point a clinician types it, so a reproduction is easy to
 build from real content by accident. Redact it, or synthesize an equivalent case.
 
@@ -68,15 +68,15 @@ release a fix before any public disclosure (coordinated disclosure).
 
 ## Scope
 
-In scope: the FerroCHART server and libraries in this repository, its mapping
+In scope: the FerroFORMS server and libraries in this repository, its mapping
 handling, its build and release pipeline, and its published artifacts.
 
 Out of scope: a vulnerability in a third-party dependency with no
-FerroCHART-specific impact (report those upstream; Dependabot and `cargo deny`
+FerroFORMS-specific impact (report those upstream; Dependabot and `cargo deny`
 track advisories here), a vulnerability in the openEHR CDR or the terminology
-server a deployment points FerroCHART at (report those to that project), and an
+server a deployment points FerroFORMS at (report those to that project), and an
 issue that requires an already-compromised host or a misconfiguration outside
-FerroCHART's control.
+FerroFORMS's control.
 
 ## How releases are verified
 
@@ -90,16 +90,16 @@ alone:
 
 ```sh
 gh attestation verify ferrochart-<tag>-<target>.tar.gz \
-  -R FerroHEALTH/FerroCHART \
-  --signer-workflow FerroHEALTH/FerroCHART/.github/workflows/release-build.yml
+  -R FerroHEALTH/FerroFORMS \
+  --signer-workflow FerroHEALTH/FerroFORMS/.github/workflows/release-build.yml
 
 gh attestation verify oci://ghcr.io/ferrohealth/ferrochart:<version> \
-  -R FerroHEALTH/FerroCHART \
-  --signer-workflow FerroHEALTH/FerroCHART/.github/workflows/release-image.yml
+  -R FerroHEALTH/FerroFORMS \
+  --signer-workflow FerroHEALTH/FerroFORMS/.github/workflows/release-image.yml
 ```
 
 Releases up to v0.1.0 were built before the repository moved to the
-FerroHEALTH organization: they are signed as `rubentalstra/FerroCHART`
+FerroHEALTH organization: they are signed as `rubentalstra/FerroFORMS`
 and their image is `ghcr.io/rubentalstra/ferrochart`, so verify those
 with the old names in every command above. The same manifests are also
 at `ghcr.io/ferrohealth/ferrochart`, copied by digest.

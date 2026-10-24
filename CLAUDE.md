@@ -3,7 +3,7 @@
 
 # CLAUDE.md
 
-**FerroCHART** is a pure-Rust openEHR form builder and renderer. It compiles an
+**FerroFORMS** is a pure-Rust openEHR form builder and renderer. It compiles an
 operational template into a form definition, renders that form for a clinician,
 and turns the entered values back into a COMPOSITION committed to an openEHR
 CDR over the ITS-REST API (FerroEHR is the reference CDR, never a compile-time
@@ -12,9 +12,9 @@ terminology server (FerroTERM is the reference) to expand the value sets behind
 coded fields.
 
 The name follows the Ferro family (FerroEHR, FerroTERM, FerroBRIDGE).
-FerroCHART in prose, `ferrochart` in identifiers. The product is not called
-FerroFORM because ferroform.eu was already registered
-(`.claude/memory/domain-ferrochart-eu.md`).
+FerroFORMS in prose, `ferroforms` in identifiers, ferroforms.eu as the
+domain. The product was called FerroCHART up to v0.1.1 and was renamed in
+October 2026 (`.claude/memory/domain-ferroforms-eu.md`).
 
 ## Status: the design is settled, and the build has started
 
@@ -59,7 +59,7 @@ work. Losing hand layout on a template update is the failure mode this design
 exists to avoid, and it is the reason to prefer the overlay over an editor that
 owns the whole document.
 
-The other load-bearing decision is that FerroCHART is **CDR-agnostic**. It is a
+The other load-bearing decision is that FerroFORMS is **CDR-agnostic**. It is a
 client of the openEHR REST API and works against EHRbase, Better, vitagroup, or
 FerroEHR. A form builder that works with only one CDR is no use to the
 community that asked for this (`.claude/memory/product-scope.md`).
@@ -194,7 +194,7 @@ AI attribution). Delegate with a tight spec and verify the result.
   implementation.
 - **A form never admits what the template refuses.** The form definition is a
   projection of the operational template. A CDR rejecting a COMPOSITION that
-  FerroCHART built and validated is always our bug.
+  FerroFORMS built and validated is always our bug.
 - **Cite only durable references:** the openEHR specifications, official
   external documentation (the Rust book and reference, the docs.rs page of a
   pinned crate), or `docs/architecture.md`, which is the design of record and

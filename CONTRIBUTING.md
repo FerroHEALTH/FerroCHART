@@ -1,14 +1,14 @@
 <!-- SPDX-FileCopyrightText: Cadasto B.V. -->
 <!-- SPDX-License-Identifier: BUSL-1.1 -->
 
-# Contributing to FerroCHART
+# Contributing to FerroFORMS
 
-FerroCHART is a pure-Rust openEHR form builder and renderer: it compiles an
+FerroFORMS is a pure-Rust openEHR form builder and renderer: it compiles an
 operational template into a form definition, renders that form for a clinician,
 and turns the entered values back into a COMPOSITION committed to any openEHR
 CDR. It is in its **design phase**: there is no code, and the architecture is the output of the
 research program on
-[issue #1](https://github.com/FerroHEALTH/FerroCHART/issues/1), which
+[issue #1](https://github.com/FerroHEALTH/FerroFORMS/issues/1), which
 produces `docs/architecture.md`. The working discipline is
 [`CLAUDE.md`](CLAUDE.md). Read it before making a change.
 
@@ -122,7 +122,7 @@ a public issue for a security problem.
 
 ## Licensing of contributions
 
-FerroCHART's own code is licensed under the Business Source License 1.1
+FerroFORMS's own code is licensed under the Business Source License 1.1
 ([`LICENSE`](LICENSE)). By submitting a contribution you:
 
 1. certify that you wrote it, or otherwise have the right to submit it under

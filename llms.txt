@@ -1,13 +1,13 @@
 <!-- SPDX-FileCopyrightText: Cadasto B.V. -->
 <!-- SPDX-License-Identifier: BUSL-1.1 -->
 
-# FerroCHART
+# FerroFORMS
 
-> FerroCHART is a pure-Rust openEHR form builder and renderer. It compiles an operational template into a form definition, renders that form for a clinician, and turns the entered values back into a COMPOSITION committed to an openEHR CDR over the ITS-REST API. It reads compositions back into the same form. A form is derived from its template, never hand-written per template, and hand-authored layout lives in a separate overlay keyed by AQL path so a template revision does not destroy it. It works against any openEHR CDR, and uses a FHIR terminology server to expand the value sets behind coded fields. The project is in its design phase: there is no Cargo workspace, no release, and no binary. FerroCHART ships no AI: no model is trained, embedded, or called at request time. AI coding assistance is used to build it, under human review.
+> FerroFORMS is a pure-Rust openEHR form builder and renderer. It compiles an operational template into a form definition, renders that form for a clinician, and turns the entered values back into a COMPOSITION committed to an openEHR CDR over the ITS-REST API. It reads compositions back into the same form. A form is derived from its template, never hand-written per template, and hand-authored layout lives in a separate overlay keyed by AQL path so a template revision does not destroy it. It works against any openEHR CDR, and uses a FHIR terminology server to expand the value sets behind coded fields. The project is in its design phase: there is no Cargo workspace, no release, and no binary. FerroFORMS ships no AI: no model is trained, embedded, or called at request time. AI coding assistance is used to build it, under human review.
 
 ## Start here
 
-- [README](README.md): what FerroCHART is, what is decided, what is open, and the licence.
+- [README](README.md): what FerroFORMS is, what is decided, what is open, and the licence.
 - [Version matrix](docs/VERSIONS.md): every version pin in one place, with the file that repeats each one.
 - [Working discipline](CLAUDE.md): the engineering rules for changing the code, and the repo map.
 - The architecture document does not exist yet. It is the output of the research program on issue #1.
@@ -28,7 +28,7 @@
 
 ## Governance and policies
 
-- [AI statement](AI_STATEMENT.md): how AI tools are used to develop FerroCHART, and the fact that the product ships no AI.
+- [AI statement](AI_STATEMENT.md): how AI tools are used to develop FerroFORMS, and the fact that the product ships no AI.
 - [Governance](GOVERNANCE.md): how decisions get made, and by whom.
 - [Maintainers](MAINTAINERS.md): the roster and the access-continuity answer.
 - [Contributing](CONTRIBUTING.md): setup, gates, and the hard rules.

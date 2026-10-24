@@ -40,8 +40,8 @@ readonly BRAND_FILES=(
   favicon-32.png
   favicon.ico
   favicon.svg
-  ferrochart-icon.svg
-  ferrochart-social.png
+  ferroforms-icon.svg
+  ferroforms-social.png
   tokens.css
 )
 

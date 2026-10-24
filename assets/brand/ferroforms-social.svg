@@ -1,10 +1,10 @@
 <!-- SPDX-FileCopyrightText: Cadasto B.V. -->
 <!-- SPDX-License-Identifier: BUSL-1.1 -->
 <!-- The 1200x630 social card. Iron ground, the mark and the wordmark, what the
-     product does, and the status, because there is no binary to download and
-     the card must not imply one. -->
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="FerroCHART: an openEHR form builder and renderer, in Rust">
-  <title>FerroCHART</title>
+     product does, and the status, so the card never claims more than the
+     releases do. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="FerroFORMS: an openEHR form builder and renderer, in Rust">
+  <title>FerroFORMS</title>
   <defs>
     <linearGradient id="ground" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#0f172a"/>
@@ -21,7 +21,7 @@
     <path d="M19.5 40 L24.5 45 L33 36.5" stroke="#E04F84" stroke-width="4.6" stroke-linejoin="round"/>
   </g>
 
-  <text x="256" y="248" font-family="'Bricolage Grotesque',system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="76" font-weight="700" letter-spacing="-1" fill="#f1f5f9">FerroCHART</text>
+  <text x="256" y="248" font-family="'Bricolage Grotesque',system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="76" font-weight="700" letter-spacing="-1" fill="#f1f5f9">FerroFORMS</text>
 
   <text x="96" y="352" font-family="system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="34" font-weight="500" fill="#CBD5E1">An openEHR form builder and renderer, in Rust.</text>
   <text x="96" y="400" font-family="system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="34" font-weight="500" fill="#8593A8">Operational templates in, forms out, compositions into any CDR.</text>
@@ -29,9 +29,9 @@
   <g transform="translate(96,470)">
     <rect x="0" y="0" width="290" height="64" rx="14" fill="#221523" stroke="#C2185B" stroke-width="2"/>
     <circle cx="32" cy="32" r="8" fill="#E04F84"/>
-    <text x="54" y="41" font-family="system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="26" font-weight="700" fill="#f1f5f9">In design phase</text>
+    <text x="54" y="41" font-family="system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="26" font-weight="700" fill="#f1f5f9">Early releases</text>
   </g>
-  <text x="410" y="511" font-family="system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="24" font-weight="500" fill="#64748B">No binary yet. The architecture is the work.</text>
+  <text x="410" y="511" font-family="system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="24" font-weight="500" fill="#64748B">The round trip runs. It has not met a real CDR yet.</text>
 
-  <text x="1104" y="592" text-anchor="end" font-family="system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="26" font-weight="600" fill="#64748B">ferrochart.eu</text>
+  <text x="1104" y="592" text-anchor="end" font-family="system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="26" font-weight="600" fill="#64748B">ferroforms.eu</text>
 </svg>

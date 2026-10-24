@@ -4,8 +4,8 @@
      outline is dropped here, because a rounded rect inside a rounded tile
      turns to mush at 16 px. The intrinsic size stays 32, because a favicon
      wants a small natural size. -->
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" role="img" aria-label="FerroCHART">
-  <title>FerroCHART</title>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" role="img" aria-label="FerroFORMS">
+  <title>FerroFORMS</title>
   <rect x="0" y="0" width="32" height="32" rx="7" fill="#C2185B"/>
   <g fill="none" stroke="#f8fafc" stroke-linecap="round" stroke-linejoin="round">
     <path d="M8 10 H24" stroke-width="2.8"/>

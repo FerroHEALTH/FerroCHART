@@ -1,7 +1,7 @@
 <!-- SPDX-FileCopyrightText: Cadasto B.V. -->
 <!-- SPDX-License-Identifier: BUSL-1.1 -->
 
-# <img src="/assets/brand/ferrochart-lockup-auto.svg" alt="FerroFORMS" width="244" height="56">
+# <img src="/assets/brand/ferroforms-lockup-auto.svg" alt="FerroFORMS" width="244" height="56">
 
 <!-- badges:begin -->
 [![CI](https://github.com/FerroHEALTH/FerroFORMS/actions/workflows/ci.yml/badge.svg)](https://github.com/FerroHEALTH/FerroFORMS/actions/workflows/ci.yml)

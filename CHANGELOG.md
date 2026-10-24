@@ -42,6 +42,14 @@ the build order.
   MAINTAINERS.md and GOVERNANCE.md say Cadasto B.V. handles the business side.
   The maintainer keeps the technical side.
 
+### Fixed
+
+- The attestation commands in the README and SECURITY.md name the identity
+  the existing releases are signed with again: `FerroHEALTH/FerroCHART` for
+  v0.1.1 and `rubentalstra/FerroCHART` up to v0.1.0. The product rename had
+  changed them to FerroFORMS, which no release is signed as, so
+  `gh attestation verify` failed for every release.
+
 ### Security
 
 - `rustls` moves to 0.23.46 and `rustls-webpki` to 0.103.16 for

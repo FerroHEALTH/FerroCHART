@@ -90,16 +90,16 @@ alone:
 
 ```sh
 gh attestation verify ferrochart-<tag>-<target>.tar.gz \
-  -R FerroHEALTH/FerroFORMS \
-  --signer-workflow FerroHEALTH/FerroFORMS/.github/workflows/release-build.yml
+  -R FerroHEALTH/FerroCHART \
+  --signer-workflow FerroHEALTH/FerroCHART/.github/workflows/release-build.yml
 
 gh attestation verify oci://ghcr.io/ferrohealth/ferrochart:<version> \
-  -R FerroHEALTH/FerroFORMS \
-  --signer-workflow FerroHEALTH/FerroFORMS/.github/workflows/release-image.yml
+  -R FerroHEALTH/FerroCHART \
+  --signer-workflow FerroHEALTH/FerroCHART/.github/workflows/release-image.yml
 ```
 
 Releases up to v0.1.0 were built before the repository moved to the
-FerroHEALTH organization: they are signed as `rubentalstra/FerroFORMS`
+FerroHEALTH organization: they are signed as `rubentalstra/FerroCHART`
 and their image is `ghcr.io/rubentalstra/ferrochart`, so verify those
 with the old names in every command above. The same manifests are also
 at `ghcr.io/ferrohealth/ferrochart`, copied by digest.

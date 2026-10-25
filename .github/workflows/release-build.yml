@@ -97,7 +97,7 @@ jobs:
       # target costs a few minutes and adds no attestation subject: the bundle
       # rides inside the binary this lane already signs.
       - name: Install Trunk
-        uses: taiki-e/install-action@4cef1412cce204788f482e778a0b9187f9626a29 # v2.87.21
+        uses: taiki-e/install-action@8cca0918f8471c33515202b73f56ab27f2bed283 # v2.87.29
         with:
           tool: trunk@0.21.14
       - name: Add the WebAssembly target
@@ -112,7 +112,7 @@ jobs:
       # release page's SBOM never travelled with it
       # (https://github.com/rust-secure-code/cargo-auditable).
       - name: Install cargo-auditable
-        uses: taiki-e/install-action@4cef1412cce204788f482e778a0b9187f9626a29 # v2.87.21
+        uses: taiki-e/install-action@8cca0918f8471c33515202b73f56ab27f2bed283 # v2.87.29
         with:
           tool: cargo-auditable@0.7.5
 
@@ -178,7 +178,7 @@ jobs:
       # that make an SBOM actionable, and it is generated from the release
       # commit's own Cargo.lock.
       - name: Install cargo-cyclonedx
-        uses: taiki-e/install-action@4cef1412cce204788f482e778a0b9187f9626a29 # v2.87.21
+        uses: taiki-e/install-action@8cca0918f8471c33515202b73f56ab27f2bed283 # v2.87.29
         with:
           tool: cargo-cyclonedx@0.5.9
 
@@ -311,7 +311,7 @@ jobs:
       # The image lane takes the archive from this run's artifacts and
       # re-verifies its attestation before it copies the binary out.
       - name: Hand the archive to the image lane
-        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
         with:
           name: ferrochart-${{ inputs.tag }}-${{ inputs.target }}
           path: ${{ env.ASSET }}

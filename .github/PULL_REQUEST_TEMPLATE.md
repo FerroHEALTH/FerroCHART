@@ -7,10 +7,6 @@
 
 Closes #NNN
 
-## Licensing of contributions
-
-- [ ] I accept the terms in [CONTRIBUTING.md § Licensing of contributions](../CONTRIBUTING.md#licensing-of-contributions): I have the right to submit this work, I license it under the project licence of the version it lands in, and I grant the Licensor the relicensing right stated there.
-
 ## Checklist
 
 - [ ] Spec-facing decisions cite the governing specification (the openEHR Reference Model, the Archetype Object Model and ADL, ITS-REST, or AQL), not memory and not another implementation.
@@ -22,7 +18,7 @@ Closes #NNN
 - [ ] No AI or assistant attribution anywhere in the commits or this PR.
 
 Contributions carry the licensing terms in
-[CONTRIBUTING.md](../CONTRIBUTING.md#licensing-of-contributions); the
-`contribution-licence-guard` check reads the box above, and there is no separate
-agreement to sign. See [CONTRIBUTING.md](../CONTRIBUTING.md) for the full
+[CONTRIBUTING.md](../CONTRIBUTING.md#licensing-of-contributions); opening this
+pull request is your acceptance of them, and there is no separate agreement to
+sign. See [CONTRIBUTING.md](../CONTRIBUTING.md) for the full
 contribution guide.

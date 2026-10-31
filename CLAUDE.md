@@ -244,8 +244,8 @@ managed, or embedded service and for for-fee distribution), and Apache License
 2.0 four years after each version. Every first-party file carries
 `SPDX-FileCopyrightText: Cadasto B.V.` and `SPDX-License-Identifier: BUSL-1.1`
 in its header. A contribution is licensed under the same licence and grants the Licensor
-the relicensing right in CONTRIBUTING.md § Licensing of contributions; the
-pull request checkbox records it and `contribution-licence-guard` enforces it.
+the relicensing right in CONTRIBUTING.md § Licensing of contributions; opening
+the pull request is the contributor's acceptance of those terms.
 Vendored specifications and third-party material keep their upstream terms,
 recorded in a `PROVENANCE.md` beside each vendored tree
 (`.claude/rules/vendored-inputs.md`).
